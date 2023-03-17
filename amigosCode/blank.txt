@@ -1,1 +1,4 @@
-
+It is Student Management System.
+We can add the details, show the details, delete the detail of the students using this.
+it is implemented using h2 database.
+also the repository class extents using jparepository.
