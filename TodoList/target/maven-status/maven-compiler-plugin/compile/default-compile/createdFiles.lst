@@ -1,0 +1,6 @@
+com\example\shankz\model\TodoListModel.class
+com\example\shankz\config\TodoItemLoader.class
+com\example\shankz\controller\TodoListController.class
+com\example\shankz\service\TodoService.class
+com\example\shankz\TodoListApplication.class
+com\example\shankz\repository\TodoRepository.class

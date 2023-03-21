@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link th:rel="stylesheet"
+		th:href="@{/webjars/bootstrap/3.4.1/css/bootstrap.min.css} " />
+		<link rel="stylesheet" href="Todocss.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="col-md-6">
+				<form action="#"
+				th:action="@{/todo/{id}(id=${todoItems.id})}"
+				th:object="${todoItems}"
+				th:method="post">
+					<div class="form-group text-center">
+						<label for="description" class="font-weight-bold">DESCRIPTION</label>
+						<input class="form-control" type="text" th:field="${todoItems.description} " id="description" placeholder="Add a description" required="required">
+					</div>
+					<div class="checkbox">
+						<label >
+							<input type="checkbox" th:checked="${completed} == true" th:field="*{completed}" id="completed" />
+                        COMPLETED
+						</label>
+						<div class="checkbox"></div>
+					</div>
+					<button class="btn btn-primary" type="submit">Reset</button>
+					
+					<input type="hidden" th:field="${todoItems.createdtime}">
+					<input type="hidden" th:field="${todoItems.modifiedtime}">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
