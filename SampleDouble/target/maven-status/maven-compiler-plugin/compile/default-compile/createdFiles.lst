@@ -1,0 +1,10 @@
+com\example\shankz\service\UserServiceImpl.class
+com\example\shankz\web\MainController.class
+com\example\shankz\web\dto\UserRegistrationDto.class
+com\example\shankz\service\UserService.class
+com\example\shankz\SampleDoubleApplication.class
+com\example\shankz\model\Role.class
+com\example\shankz\model\User.class
+com\example\shankz\config\ConfigSecurity.class
+com\example\shankz\web\UserRegistrationController.class
+com\example\shankz\respository\UserRepository.class
